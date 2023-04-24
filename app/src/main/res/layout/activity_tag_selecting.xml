@@ -1,0 +1,561 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:text="Выбери что тебе нравится\nи что ты умеешь/знаешь"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Coding👩‍💻"
+            android:textSize="18sp" />
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Fsharp"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#SQL"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Java"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#C++"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Аналитика"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Дизайн"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Redis"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Python"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#ML"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#DataBases"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#DataScience"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Arduino"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Настолки🎲"
+            android:textSize="18sp"
+            android:layout_marginTop = "15dp"/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#DnD"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Шахматы"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Шашки"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#НуПогоди"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Мафия"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Монополия"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#UNO"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Спорт🏅"
+            android:textSize="18sp"
+            android:layout_marginTop = "15dp"/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Футбол"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#ПеретягиваниеКаната"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Баскетбол"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Лазертаг"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Пейнтбол"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Воллейбол"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#МногоеДругое"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Киберспорт🎮"
+            android:textSize="18sp"
+            android:layout_marginTop = "15dp"/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#CS:GO"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#DOTA2"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#WarThunder"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#WoT"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#WarFace"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Стратегии"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Шутеры"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Интересы🧐"
+            android:textSize="18sp"
+            android:layout_marginTop = "15dp"/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Наука"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Искусство"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Литература"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Рисование"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Психология"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Дебаты"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="7dp"
+                android:text="#Политика"
+                android:textColor="@drawable/text_selector"
+                android:textSize="12sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+        <Button
+
+            android:id="@+id/button_registration"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="20dp"
+            android:text="Закончить регистрацию"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

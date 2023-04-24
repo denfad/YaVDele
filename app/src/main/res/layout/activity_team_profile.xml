@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TeamProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounde_rectangle"
+            android:backgroundTint="?attr/colorSurfaceVariant"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_gradient"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/team_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📍Москва"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/team_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coding👩‍💻"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/team_image_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:padding="4dp"
+                        app:layout_constraintBottom_toTopOf="@+id/team_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/team_image"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:outlineProvider="background"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/team_logo" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/team_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="#DEFINE"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/team_image_container" />
+
+                    <TextView
+                        android:id="@+id/team_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="Оценка❤️"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@id/team_rate_bar"
+                        app:layout_constraintLeft_toRightOf="@id/team_image_container"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <com.akexorcist.roundcornerprogressbar.TextRoundCornerProgressBar
+                        android:id="@+id/team_rate_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="22dp"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/team_image_container"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:rcAnimationEnable="true"
+                        app:rcAnimationSpeedScale="3"
+                        app:rcBackgroundColor="?attr/colorPrimary"
+                        app:rcBackgroundPadding="2dp"
+                        app:rcMax="5"
+                        app:rcProgress="0"
+                        app:rcProgressColor="?attr/colorOnPrimary"
+                        app:rcRadius="10dp"
+                        app:rcTextPositionPriority="inside"
+                        app:rcTextProgress="0"
+                        app:rcTextProgressColor="?attr/colorPrimary"
+                        app:rcTextProgressSize="11sp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Участников: "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/team_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_open_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="Показать всех" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="20dp"
+           app:contentPadding="15dp"
+            style="?attr/materialCardViewFilledStyle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="О нас"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/team_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Самая активная команда МАИ по хакатонам\nМы настолько любим хакатоны, что готовы брать мобильных разработчиков в рабство"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp"
+            style="?attr/materialCardViewFilledStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Кого мы ищем"
+                    android:textSize="18sp" />
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/small_round_rectangle"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:padding="7dp"
+                        android:text="#SQL"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/small_round_rectangle"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:padding="7dp"
+                        android:text="#JAVA"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/small_round_rectangle"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:padding="7dp"
+                        android:text="#C++"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/small_round_rectangle"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:padding="7dp"
+                        android:text="#Аналитика"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/small_round_rectangle"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:padding="7dp"
+                        android:text="#Дизайн"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="12sp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/button_admit_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:text="Подать заявку"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

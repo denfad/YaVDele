@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2994791666666667" />
+        <entry key="app/src/main/res/drawable/background_gradient.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/radio_normal.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/radio_selected.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/radio_selector.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/rounde_rectangle.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/small_round_rectangle.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/team_logo.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/text_selector.xml" value="0.2365" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tag_selecting.xml" value="0.27291666666666664" />
+        <entry key="app/src/main/res/layout/activity_team_profile.xml" value="0.29156341552734377" />
+        <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.35190217391304346" />
+        <entry key="app/src/main/res/layout/item_small_team.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
