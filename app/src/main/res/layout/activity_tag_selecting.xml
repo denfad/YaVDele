@@ -550,7 +550,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="2dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginVertical="20dp"
             android:text="Закончить регистрацию"
             android:textAllCaps="false"
             android:textSize="18sp" />

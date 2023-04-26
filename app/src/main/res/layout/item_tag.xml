@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tag_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/small_round_rectangle"
+    android:backgroundTint="?attr/colorSecondaryContainer"
+    android:padding="7dp"
+    android:text="#SQL"
+    android:textColor="?attr/colorOnSecondaryContainer"
+    android:textSize="12sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

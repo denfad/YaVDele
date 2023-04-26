@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YaVDele">
         <activity
+            android:name=".activity.EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NewsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.TagSelectingActivity"
             android:exported="false" />
         <activity

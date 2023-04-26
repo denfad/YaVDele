@@ -20,7 +20,7 @@ public class TagSelectingActivity extends AppCompatActivity {
         regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(TagSelectingActivity.this, UserProfileActivity.class);
+                Intent mainIntent = new Intent(TagSelectingActivity.this, NewsActivity.class);
                 startActivity(mainIntent);
             }
         });

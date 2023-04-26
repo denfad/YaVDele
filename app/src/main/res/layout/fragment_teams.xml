@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorOutline"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/colorSurfaceVariant"
+        android:paddingVertical="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/full_rounded_rectangle"
+            android:backgroundTint="?attr/colorOutline"
+            android:paddingHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#0049454F"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Поиск команд"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:background="?attr/colorOutline"
+                android:textColor="?attr/colorControlNormal"
+                android:textColorHint="?attr/colorControlNormal"/>
+
+            <ImageButton
+                android:id="@+id/filter_team"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#0049454F"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/filter" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add_team"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#0049454F"
+            android:gravity="right"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_teams"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
