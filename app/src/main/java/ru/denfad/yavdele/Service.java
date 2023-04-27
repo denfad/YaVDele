@@ -12,6 +12,7 @@ public class Service {
     private List<Team> teams = new ArrayList<>();
     private List<Event> events = new ArrayList<>();
     private List<User> users = new ArrayList<>();
+    private List<String> tags = List.of("#SQL", "#Java", "#C#", "#Аналитика", "#DataBases", "#Музыка", "#Гитара", "#Светошоу", "#Футбол", "#DnD", "#UNO");
 
     private Service() {
 
@@ -49,6 +50,7 @@ public class Service {
         users.add(new User("Дмитрий Штапов", "galka", "Москва", List.of("#SQL", "#Java", "#C#", "#Аналитика", "#DataBases", "#DataScience", "#Arduino")));
         users.add(new User("Дмитрий Штапов", "galka", "Москва", List.of("#SQL", "#Java", "#C#", "#Аналитика", "#DataBases", "#DataScience", "#Arduino")));
         users.add(new User("Дмитрий Штапов", "galka", "Москва", List.of("#SQL", "#Java", "#C#", "#Аналитика", "#DataBases", "#DataScience", "#Arduino")));
+
     }
 
     public static Service getInstance() {
@@ -66,5 +68,9 @@ public class Service {
 
     public List<User> getUsers() {
         return users;
+    }
+
+    public List<String> getTags() {
+        return tags;
     }
 }

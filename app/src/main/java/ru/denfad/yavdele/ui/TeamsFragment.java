@@ -29,6 +29,7 @@ import java.util.List;
 import ru.denfad.yavdele.Model.Team;
 import ru.denfad.yavdele.R;
 import ru.denfad.yavdele.Service;
+import ru.denfad.yavdele.activity.EditTeamActivity;
 import ru.denfad.yavdele.activity.TeamProfileActivity;
 
 public class TeamsFragment  extends Fragment {
@@ -52,24 +53,14 @@ public class TeamsFragment  extends Fragment {
         LinearSnapHelper l = new LinearSnapHelper();
         p.attachToRecyclerView(list);
 
-//        ImageButton lockScroll = view.findViewById(R.id.lock_scroll);
-//        lockScroll.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//                if(bLockScroll) {
-//                    lockScroll.setImageResource(R.drawable.unlock);
-//                    bLockScroll = false;
-//                    p.attachToRecyclerView(null);
-//                    l.attachToRecyclerView(list);
-//                } else {
-//                    lockScroll.setImageResource(R.drawable.lock);
-//                    bLockScroll = true;
-//                    l.attachToRecyclerView(null);
-//                    p.attachToRecyclerView(list);
-//                }
-//            }
-//        });
+        ImageButton addTeam = view.findViewById(R.id.add_team);
+        addTeam.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+              startActivity(new Intent(getContext(), EditTeamActivity.class));
+            }
+        });
 
 
     }
