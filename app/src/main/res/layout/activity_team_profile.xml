@@ -298,7 +298,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <Button
-            android:id="@+id/button_admit_application"
+            android:id="@+id/button_response"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

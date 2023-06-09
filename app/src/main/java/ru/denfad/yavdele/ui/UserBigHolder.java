@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import ru.denfad.yavdele.R;
 
 public class UserBigHolder extends RecyclerView.ViewHolder{
+    View view;
     TextView name;
     TextView place;
     RecyclerView box;
@@ -18,6 +19,7 @@ public class UserBigHolder extends RecyclerView.ViewHolder{
     ImageView image;
     public UserBigHolder(@NonNull View itemView) {
         super(itemView);
+        this.view = itemView;
         name = itemView.findViewById(R.id.user_name);
         place = itemView.findViewById(R.id.user_place);
         box = itemView.findViewById(R.id.user_box);

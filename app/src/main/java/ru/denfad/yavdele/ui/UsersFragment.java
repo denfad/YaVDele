@@ -50,7 +50,7 @@ public class UsersFragment extends Fragment {
     }
 
     class UsersAdapter extends RecyclerView.Adapter<UserBigHolder> {
-
+        private View selectedCard = null;
 
         @NonNull
         @Override
@@ -60,21 +60,6 @@ public class UsersFragment extends Fragment {
 
             // Inflate the custom layout
             View contactView = inflater.inflate(R.layout.item_big_user, parent, false);
-            contactView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(contactView.findViewById(R.id.expanded_information).getVisibility() == View.VISIBLE){
-                        contactView.findViewById(R.id.expanded_information).setVisibility(View.GONE);
-                        TransitionManager.beginDelayedTransition((CardView)contactView, new AutoTransition());
-
-                    }
-                    else {
-
-                        contactView.findViewById(R.id.expanded_information).setVisibility(View.VISIBLE);
-                        TransitionManager.beginDelayedTransition((CardView)contactView, new AutoTransition());
-                    }
-                }
-            });
 
             // Return a new holder instance
             UserBigHolder viewHolder = new UserBigHolder(contactView);
@@ -106,6 +91,28 @@ public class UsersFragment extends Fragment {
             final int resourceId = resources.getIdentifier("photo"+r, "drawable",
                     getContext().getPackageName());
             holder.image.setImageResource(resourceId);
+
+            holder.view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(selectedCard ==  holder.view) {
+                        holder.view.findViewById(R.id.expanded_information).setVisibility(View.GONE);
+                        TransitionManager.beginDelayedTransition((CardView) holder.view, new AutoTransition());
+                        selectedCard = null;
+                    }
+                    else if(selectedCard != null) {
+                        selectedCard.findViewById(R.id.expanded_information).setVisibility(View.GONE);
+                        TransitionManager.beginDelayedTransition((CardView)selectedCard, new AutoTransition());
+                        selectedCard =  holder.view;
+                        holder.view.findViewById(R.id.expanded_information).setVisibility(View.VISIBLE);
+                        TransitionManager.beginDelayedTransition((CardView) holder.view, new AutoTransition());
+                    } else {
+                        selectedCard =  holder.view;
+                        holder.view.findViewById(R.id.expanded_information).setVisibility(View.VISIBLE);
+                        TransitionManager.beginDelayedTransition((CardView) holder.view, new AutoTransition());
+                    }
+                }
+            });
         }
 
         @Override

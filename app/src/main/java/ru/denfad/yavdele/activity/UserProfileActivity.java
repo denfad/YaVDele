@@ -2,6 +2,9 @@ package ru.denfad.yavdele.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,6 +14,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
@@ -21,6 +25,7 @@ import java.util.List;
 import ru.denfad.yavdele.Model.Team;
 import ru.denfad.yavdele.R;
 import ru.denfad.yavdele.Service;
+import ru.denfad.yavdele.ui.EditUserDialogFragment;
 import ru.denfad.yavdele.ui.TeamSmallViewHolder;
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -42,7 +47,7 @@ public class UserProfileActivity extends AppCompatActivity {
         ImageView teamImage = findViewById(R.id.user_image);
         teamImage.setClipToOutline(true);
 
-        TextRoundCornerProgressBar rate= findViewById(R.id.user_rate_bar);
+        TextRoundCornerProgressBar rate = findViewById(R.id.user_rate_bar);
         rate.setProgress(4.5f);
         rate.setProgressText(String.valueOf(4.5));
 
@@ -51,7 +56,7 @@ public class UserProfileActivity extends AppCompatActivity {
         pages.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                switch (i){
+                switch (i) {
                     case R.id.button_user_teams:
 
                         break;
@@ -61,6 +66,18 @@ public class UserProfileActivity extends AppCompatActivity {
                         break;
 
                 }
+            }
+        });
+
+        Button editProfile = findViewById(R.id.edit_profile);
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                EditUserDialogFragment editFragment = new EditUserDialogFragment();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                editFragment.setStyle(DialogFragment.STYLE_NORMAL, android.R.id.content);
+                editFragment.show(getSupportFragmentManager(), "fragment_edit_user");
             }
         });
     }
