@@ -4,3 +4,10 @@
 
 Приложение ЯВДеле учитывает ваши интересы и способности, чтобы найти вам идеальных сокомандников.
  
+ ![alt text](https://github.com/denfad/YaVDele/blob/master/images/image1.png)
+ 
+ ![alt text](https://github.com/denfad/YaVDele/blob/master/images/image2.png)
+ 
+ ![alt text](https://github.com/denfad/YaVDele/blob/master/images/image3.png)
+ 
+ ![alt text](https://github.com/denfad/YaVDele/blob/master/images/image4.png)
